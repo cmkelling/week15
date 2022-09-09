@@ -1,11 +1,12 @@
 import React, { Component, component } from 'react';
 import { HousesList } from './components/HousesList';
+import './App.css';
 
 class App extends Component {
     render() {
         return (
             <div>
-                <HousesList props = {{test: data}}/>
+                <HousesList/>
             </div>
         )
     }
