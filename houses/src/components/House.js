@@ -19,10 +19,9 @@ export const House = (props) => {
     const rooms = () => {
         <ul>
             {house.rooms.map((room, index) => {
-                <li key={ index }>
+                <><li key={index}>
                     <label>{`${room.name} Area: ${room.area}`}</label>
-                </li>,
-                <button onClick={(e) => deleteRoom(room._id)}>Delete</button>
+                </li><button onClick={() => deleteRoom(room._id)}>Delete</button></>
             })}
         </ul>
     };

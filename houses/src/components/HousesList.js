@@ -1,5 +1,5 @@
 import React from 'react';
-import { House } from './house';
+import { House } from './House';
 import { housesApi } from '../rest/housesAPI.js';
 
 export class HousesList extends React.Component {
@@ -26,7 +26,7 @@ export class HousesList extends React.Component {
             <div className='house-list'>
                 {this.state.houses.map((house) => (
                     <House
-                        house={house}
+                        house={ house }
                         key={house._id}
                         updateHouse={this.updateHouse}
                     />
