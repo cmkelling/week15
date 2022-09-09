@@ -17,7 +17,7 @@ export class HousesList extends React.Component {
     };
 
     updateHouse = async (updatedHouse)=> {
-        await houses.put(updatedHouse);
+        await House.put(updatedHouse);
         this.fetchHouses();
     };
 
